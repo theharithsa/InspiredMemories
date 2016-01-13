@@ -10,4 +10,15 @@ Hence I dedicate this Project to her for her. Her Name is Spoorthi and Her Memor
 
 Hope You all Join me in My Project
 
+Details of Usage.....
+
+1. It is a simple HTML5 Project
+2. All the Source Files are Direct and Can be edited with any IDE
+3. Still There is no support of NodeJs. It will be Comming Soon
+4. Anyone can Use any Libraries to Implement the Idea.
+5. New Ideas are always Welcome
+6. Make sure to maintain the Quality of the Project.
+7. I respect every Contributer to this Project with Happiness
+8. I need you and the World needs Generous People
+
 Thank You
