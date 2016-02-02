@@ -1,0 +1,523 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	    Matarial CV/Resume Template 
+Version:	    1.0
+Last change:	12/08/15 
+Primary use:	CV/Resume, Portfolio  
+-------------------------------------------------------------------*/
+/*
+|----------------------------------------------------------------------------
+| CSS INDEX
+|----------------------------------------------------------------------------
+    1. GLOBAL STYLESHEET
+        1-1. COMPONENTS
+        1-2. TYPOGRAPHY
+        1.3. BODY
+    2. SIDEBAR
+        2.1. NAV
+    3. SECTION
+        3.1 WORK EXPERIENCE
+        3.2 INTERESTS
+        3.2 WEBSITE
+    4. PROJECT
+        4.1 COMMENT
+    5. COVER LATTER
+    6. CONTACT
+
+*/
+
+/*
+|----------------------------------------------------------------------------
+| GLOBAL STYLESHEET
+|----------------------------------------------------------------------------
+*/
+
+/* Component imported */
+@import "component";
+/* Typography imported */
+@import "typography";
+/* Colors imported */
+@import "colors";
+
+/*
+|----------------------------------------------------------------------------
+| BODY
+|----------------------------------------------------------------------------
+*/
+body{
+    background-color: @body-bg-color;
+    color: @font-color;
+    text-align: center;
+
+    .container{
+        margin-top: 24px;
+        width: 970px;
+        max-width: none !important;
+        }
+}
+/*
+|----------------------------------------------------------------------------
+| SIDEBAR
+|----------------------------------------------------------------------------
+*/
+
+.sidebar{
+    text-align: left;
+    color: @white;
+    background-color: @main-color;
+    overflow: hidden; 
+    display: block;
+}
+
+.heading{ 
+    position: relative;
+
+    .feature-img {
+      position: relative;
+
+        img{
+            width: 100%;
+        }
+    }
+/*
+|----------------------------------------------------------------------------
+| NAV
+|----------------------------------------------------------------------------
+*/    
+    .button-collapse{
+        display: block !important;
+    }
+    .nav-icon {
+        position: absolute;
+        top: 0;
+        padding: 0 16px;
+    }
+    nav{
+        background-color: inherit;
+            box-shadow: inherit;
+
+        .button-collapse{
+            i{
+                height: 30px;
+                font-size: 18pt;                        
+                line-height: 24pt;
+                background-color: @main-color;
+                margin-top: 20px;
+                padding: 0px 6px;
+            }
+        }
+        .side-nav{
+            h3{
+                color: @main-color;
+                padding: 0 15px;
+            }
+            li{
+                a{
+                    &:hover{
+                        color: @main-color;
+                    }
+                }
+                &:hover{
+                    background-color: transparent !important;
+                }
+            }
+        }
+    }
+    .title{ 
+        position: absolute;
+        right: 11px;
+        bottom: 46px;
+        h5{
+            margin-top: -5px;
+        }
+    }
+}
+.icon {        
+    margin-top: 8px;
+    .fa{
+        display: inherit;
+        text-align: center;
+    }
+}
+.sidebar-item{
+    overflow: hidden;
+    margin-top: 10px;
+
+    &:first-child {
+        margin-top: 30px;
+    }
+}
+.section-item-details{
+    padding-right: 26px;        
+    margin-bottom: 30px;        
+    p{
+        margin: 0px;
+    }
+}
+.info{        
+    border-bottom: 1px solid @border-color;
+    padding-left: 0px;   
+    span{
+        opacity: 0.7;
+        font-weight: 300;
+    }
+}
+.personal{
+    margin-bottom: 20px;
+    h4{
+        margin: 0px;
+    }
+}
+.work{
+    h4{
+        margin-bottom: 0px;
+    }
+}
+.address-details{
+    h4{
+        margin-top: 0px;            
+
+        span{
+            font-size: 10pt;
+        }
+    }
+}
+.skill-line{
+    padding-right: 30px;
+    padding-left: 0px; 
+    .progress{
+        background-color: @border-color;
+        height: 2px;
+        overflow: visible;
+        }
+        .determinate{
+            background-color: @white;
+            .fa{
+                font-size: 12px;
+                position: absolute;
+                top: -5px;
+                right: 0px;
+                margin-left: 50%;
+            }
+        }
+    h3{
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    span{
+        opacity: initial;
+    }
+}
+
+/*
+|----------------------------------------------------------------------------
+| FORMATTING
+|----------------------------------------------------------------------------
+*/
+
+#section{
+    overflow: hidden;
+}
+.section{
+    padding-left: 32px !important;
+    text-align: left;
+    .fa {
+        text-align: center;
+        display: block;
+        font-size: 30pt;
+    }
+    .section-wrapper{
+        background-color: @white;
+        overflow: hidden;
+        margin-bottom: 24px;
+        padding-bottom: 24px !important;
+        .section-icon {
+            margin-top: 40px;
+        }
+        h2{
+            margin-top: 30px;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+/*
+|----------------------------------------------------------------------------
+| WORK EXPERIENCE 
+|----------------------------------------------------------------------------
+*/
+
+.custom-content{
+    padding-right: 0px !important;
+}
+.custom-content-wrapper{
+    padding-right: 30px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #bdbdbd;
+
+    &:last-child{
+      border-bottom: initial;  
+    }
+    h3{
+        margin: 0px;
+        font-size: 12pt;
+        line-height: 20pt;
+        
+        span{
+            color: @font-color;
+        }
+    }
+    span{
+        color: @main-color;
+        margin-top: 0px;
+        font-size: 10pt;
+        line-height: 15pt;
+    }
+    p{
+        margin-top: 0px;
+        margin-bottom: 25px;
+    }
+}
+
+/*
+|----------------------------------------------------------------------------
+| INTERESTS
+|----------------------------------------------------------------------------
+*/
+.interests{    
+    ul{
+        padding-left: 0px;
+
+        li{
+            list-style-type: none;
+            display: inline-block;
+            width: 19%;
+            .fa{
+                color: @main-color;
+                text-align: left;
+            }
+        }
+    }
+}
+
+/*
+|----------------------------------------------------------------------------
+| WEBSITE
+|----------------------------------------------------------------------------
+*/
+.website {
+    padding-top: 40px !important;
+    padding: 20px;
+    
+    span{
+        font-size: 12pt;
+        line-height: 18pt;
+        a{
+            color: @main-color;
+            word-wrap: break-word;
+        }
+    }
+}
+
+/*
+|----------------------------------------------------------------------------
+| PROJECTS
+|----------------------------------------------------------------------------
+*/
+
+.post-title{
+    margin-top: -5px;
+    color: white;
+    padding: 20px;
+    h2{
+        margin: 0px;
+        font-size: 14pt;
+        line-height: 24pt;
+    }
+    span{
+       opacity: 0.7; 
+    }    
+}
+.blog-post{
+    .thumbnail {
+        img{
+            width: 100%;
+            margin-bottom: -2px;
+        }
+    }
+    &:nth-child(odd) {
+        padding-left: 0px !important;
+    }
+    &:nth-child(even) {
+        padding-right: 0px !important;
+    } 
+    &:last-child{
+        padding-right: 0px !important; 
+    }
+}
+#blog-post-1{
+    background-color: #e95855;
+}
+#blog-post-2{
+    background-color: #707281;
+}
+#blog-post-3{
+    background-color: #564d52;
+}
+#blog-post-4{
+    background-color: #47bac9;
+}
+#blog-post-5{
+    background-color: #68c02e;
+}
+.post-details {
+    background-color: @white;
+    padding: 20px;
+    margin-bottom: 24px;
+}
+.featured-img{
+    padding-right: 0px !important;
+}
+.caption{
+    padding-left: 0px !important;
+}
+#caption{    
+    .post-details{
+        margin-bottom: 0px;
+    }
+}
+
+/*
+|----------------------------------------------------------------------------
+| COMMENT
+|----------------------------------------------------------------------------
+*/
+
+.comment{
+    .section-wrapper{
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    .comment-img{
+        padding: 10px;
+    }
+    .comment-details{
+        padding: 10px;
+        h4{
+            margin: 0px;
+        }
+        span{
+            font-size: 9pt;
+            line-height: 17pt;
+        }
+    }
+}
+.comment-form{
+    padding-bottom: 0px;
+    background-color: #fff;
+    padding: 20px 50px !important;
+}
+
+/*
+|----------------------------------------------------------------------------
+| COVER LATTER
+|----------------------------------------------------------------------------
+*/
+
+.cover-latter{
+    padding: 30px;
+    margin-right: 5px;
+    margin-bottom: 24px;
+    background-color: white;
+    .cover-title{
+        span{
+            font-size: 12pt;
+            line-height: 20pt;
+            font-weight: 500;
+        }
+        h2{
+            font-size: 12pt;
+            line-height: 20pt;
+            margin-top: 20px;
+        }
+        
+        p{
+            margin-top: 0px !important;
+        }
+        
+        h4{
+            font-weight: 500;
+        }
+    }
+    strong{
+        font-weight: 400;
+    }
+    p{
+        &:last-child{
+            margin: 30px 0px;
+        } 
+        h2{
+            margin-bottom: 0px;
+            font-size: 12pt;
+            line-height: 20pt;
+        }
+    }
+    .signature{
+        h4{
+            margin: 0px;
+        }
+    }
+}
+/*
+|----------------------------------------------------------------------------
+| CONTACT
+|----------------------------------------------------------------------------
+*/
+
+.section{
+    .g-map{
+        padding-bottom: 0px !important;
+        #map{
+            width:100%; 
+            height: 350px;
+        }
+    }
+}
+input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), 
+input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), 
+input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), 
+input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]),
+input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), 
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid @main-color;
+}
+input[type=text]:focus:not([readonly])+label,
+input[type=password]:focus:not([readonly])+label, 
+input[type=email]:focus:not([readonly])+label, 
+input[type=url]:focus:not([readonly])+label, 
+input[type=time]:focus:not([readonly])+label, 
+input[type=date]:focus:not([readonly])+label,
+input[type=datetime-local]:focus:not([readonly])+label, input[type=tel]:focus:not([readonly])+label,
+input[type=number]:focus:not([readonly])+label, input[type=search]:focus:not([readonly])+label,
+textarea.materialize-textarea:focus:not([readonly])+label { 
+    color: @main-color;
+}
+.waves-me:focus {   
+    background-color: @main-color;
+    color: #fff;
+}
+.btn{
+    margin-left:10px;
+    background-color: @main-color;
+    
+    &:hover, &:focus{
+        background-color: @main-color;
+    }
+}
+.email-success, .email-failed{
+    display: none;
+    text-align: left !important;
+    margin: 0 0 0 0 !important;
+}
+

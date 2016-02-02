@@ -1,0 +1,48 @@
+/*
+|----------------------------------------------------------------------------
+| COMPONENTS
+|----------------------------------------------------------------------------
+*/
+.fix {
+  overflow: hidden;
+}
+/* wow animation */
+.a1 {
+  visibility: visible;
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.a2 {
+  visibility: visible;
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.a3 {
+  visibility: visible;
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.a4 {
+  visibility: visible;
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.a5 {
+  visibility: visible;
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+}
+.clear {
+  clear: both;
+}
+/*
+|----------------------------------------------------------------------------
+| COLORS
+|----------------------------------------------------------------------------
+*/
