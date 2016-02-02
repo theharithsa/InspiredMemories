@@ -1,7 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic);
 
 body {
-    padding-bottom: 69px;    
+    padding-bottom: 69px;
+    background-color: #eae8e7;    
 }
 
 .content-heading {
